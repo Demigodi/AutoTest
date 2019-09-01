@@ -1,7 +1,6 @@
-package com.source.entity;
+package com.course.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 
 
 @JsonIgnoreProperties(value = {"hibernateLazyInitializer", "handler"})
@@ -12,7 +11,7 @@ public class Student {
 
     public Student(){}
 
-    public Student(long id,String name,int age){
+    public Student(long id, String name, int age){
         this.id = id;
         this.name = name;
         this.age = age;

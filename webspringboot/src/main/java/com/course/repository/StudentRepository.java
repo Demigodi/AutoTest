@@ -1,9 +1,9 @@
-package com.source.repository;
+package com.course.repository;
 
-import com.source.entity.Student;
+import com.course.entity.Student;
+
 
 import java.util.Collection;
-import java.util.List;
 
 public interface StudentRepository {
 

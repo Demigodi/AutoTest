@@ -1,10 +1,13 @@
-package com.source.repository.impl;
+package com.course.repository.impl;
 
-import com.source.entity.Student;
-import com.source.repository.StudentRepository;
+import com.course.entity.Student;
+import com.course.repository.StudentRepository;
+
 import org.springframework.stereotype.Repository;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 @Repository  //在spring boot中不需要添加扫包的配置文件，在启动时会自动扫包
 public class StudentRepositoryImpl implements StudentRepository {
