@@ -7,10 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ChapterTestNg" />
+        <module name="HttpRequest" />
+        <module name="reporeHtml" />
+        <module name="springboot" />
+        <module name="TestNgAndMybatis" />
+        <module name="webspringboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ChapterTestNg" target="1.5" />
+      <module name="HttpRequest" target="1.5" />
+      <module name="reporeHtml" target="6" />
+      <module name="springboot" target="1.8" />
+      <module name="TestNgAndMybatis" target="1.5" />
+      <module name="webspringboot" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

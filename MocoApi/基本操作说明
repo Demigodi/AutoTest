@@ -1,0 +1,13 @@
+java -jar <path-to-moco-runner> http -p <monitor-port> -c < configuration -file>
+<path-to-moco-runner>：moco-runner-0.11.0-standalone.jar包的路径
+<monitor-port>：http服务监听的端口
+<configuration -file>：配置文件路径
+http可以为 https  socket
+
+java -jar moco-runner-0.12.0-standalone.jar http -p 8899 -c startupResponseCookie.json
+
+需要在response中添加请求头信息：
+"headers":{
+   "Content-Type" :"text/html;charset=gbk"
+},
+不添加会导致中文乱码

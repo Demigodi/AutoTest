@@ -1,0 +1,17 @@
+[
+  {
+    "description":"这是一个带header信息的post请求",
+    "request":{
+      "uri":"/post/headers",
+      "method":"post",
+      "queries":{
+        "name":"dingxiang",
+        "sex":"woman"
+      }
+    },
+    "response":{
+      "dingxiang":"success",
+      "status":"1"
+    }
+  }
+]
