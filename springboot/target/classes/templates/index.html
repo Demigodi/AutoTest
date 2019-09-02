@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>hello world</h1>
+
+    <div>
+        <P>获取字符值</P>
+        <p th:text="${name}"></p>
+        <p>字符拼接</p>
+        <p th:text="'学生姓名是'+${name}"></p>
+        <p th:text="|学生姓名是${name}|"></p>
+
+        <br>
+        <br>
+        <p>if判断 </p>
+        <P th:if="${flag == true}" th:text="if判断成立"></P>
+        <P th:ifunless="${flag != true}" th:text="unless判断成立"></P>
+
+        <br>
+        <br>
+        <p>循环  index是从0开始, count是从1开始</p>
+        <table>
+            <tr>
+                <th>index</th>
+                <th>count</th>
+                <th>学生ID</th>
+                <th>学生姓名</th>
+                <th>学生年龄</th>
+            </tr>
+            <tr th:each="student,stat:${list}" th:style="'background-color:'+@{${stat.odd}?'#F2F2F2'}">
+                <td th:text="${stat.index}"></td>
+                <td th:text="${stat.count}"></td>
+                <td th:text="${student.id}"></td>
+                <td th:text="${student.name}"></td>
+                <td th:text="${student.age}"></td>
+            </tr>
+        </table>
+
+        <br>
+        <P>链接</P>
+        <a th:href="@{http://www.baidu.com}">跳转</a>
+        <a th:href="@{http://localhost:8080/index/url/{name}(name=${name})}">跳转2</a>
+        <p>图片</p>
+        <img th:src="${src}">
+
+        <input th:value="${age gt 30?'中年':'青年'}"/>
+
+        <div th:switch="${gender}">
+            <p th:case="女">女</p>
+            <p th:case="男">男</p>
+            <p th:case="*">未知</p>
+        </div>
+
+        <br>
+        <!--<p th:text="${#request.getAttribute('request')}"></p>-->
+        <!--<p th:text="${#session.getAttribute('session')}"></p>-->
+        <!--<p th:text="${#locale.country}"></p>-->
+
+        <br>
+        <p>thymeleaf内嵌对象</p>
+        <p>格式化时间</p>
+        <p th:text="${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}"></p>
+        <P>创建当前时间,精确到天</P>
+        <P th:text="${#dates.createToday()}"></P>
+        <P>创建当前时间,精确到秒</P>
+        <p th:text="${#dates.createNow()}"></p>
+        <P>判断字符串是否为空</P>
+        <p th:text="${#strings.isEmpty(name)}"></p>
+        <P>判断List是否为空</P>
+        <p th:text="${#lists.isEmpty(users)}"></p>
+        <p>输出字符串长度</p>
+        <p th:text="${#strings.length(name)}"></p>
+
+    </div>
+</body>
+</html>
