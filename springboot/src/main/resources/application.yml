@@ -7,3 +7,8 @@ spring:
     suffix: .html
     mode: HTML5
     encoding: UTF-8
+  datasource:
+    url: jdbc:mysql://localhost:3306/stus?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
