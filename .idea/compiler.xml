@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ChapterTestNg" />
         <module name="HttpRequest" />
+        <module name="myBatisInSpringBoot" />
         <module name="reporeHtml" />
         <module name="springboot" />
         <module name="TestNgAndMybatis" />
@@ -17,6 +18,7 @@
     <bytecodeTargetLevel>
       <module name="ChapterTestNg" target="1.5" />
       <module name="HttpRequest" target="1.5" />
+      <module name="myBatisInSpringBoot" target="1.5" />
       <module name="reporeHtml" target="6" />
       <module name="springboot" target="1.8" />
       <module name="TestNgAndMybatis" target="1.5" />

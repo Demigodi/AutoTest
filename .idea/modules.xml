@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/ChapterTestNg/ChapterTestNg.iml" filepath="$PROJECT_DIR$/ChapterTestNg/ChapterTestNg.iml" />
       <module fileurl="file://$PROJECT_DIR$/HttpRequest/HttpRequest.iml" filepath="$PROJECT_DIR$/HttpRequest/HttpRequest.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestNgAndMybatis/TestNgAndMybatis.iml" filepath="$PROJECT_DIR$/TestNgAndMybatis/TestNgAndMybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myBatisInSpringBoot/myBatisInSpringBoot.iml" filepath="$PROJECT_DIR$/myBatisInSpringBoot/myBatisInSpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/reporeHtml/reporeHtml.iml" filepath="$PROJECT_DIR$/reporeHtml/reporeHtml.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/webspringboot/webspringboot.iml" filepath="$PROJECT_DIR$/webspringboot/webspringboot.iml" />
